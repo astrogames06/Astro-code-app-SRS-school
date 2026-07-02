@@ -175,23 +175,62 @@ Astro Code is a web-based programming platform. It depends on Supabase for stori
 
 ## 5.1 Data Dictionary
 
-### Table: __________________
+### Table: Teachers Classroom (classroom)
 
 | Field | Type | Key | Rules / Notes |
 |------|------|-----|---------------|
-| | | | |
-| | | | |
-| | | | |
+| id | uuid | PK | The unique identifier for each classroom. |
+| teacher_id | uuid | FK | The unique identifier for the teacher that owns the classroom. |
+| name | text | | The name that is given to each classroom. |
+| code | text | | The code for each classroom that allows the students to join. |
 
 ---
 
-### Table: __________________
+### Table: Students Game Project (projects)
 
 | Field | Type | Key | Rules / Notes |
 |------|------|-----|---------------|
-| | | | |
-| | | | |
-| | | | |
+| id | uuid | PK | The unique identifier for each students game. |
+| user_id | uuid | FK | The students unique identifier, who is the owner of the game. |
+| name | text | | The name given to the students game. |
+| code | text | | The Python code for the students project.  |
+| assets | jsonb | | The images and assets for the students game.  |
+| is_public | bool | | Determines if the students project is public meaning others can play and test it. |
+
+
+### Table: classroom_assignments
+
+| Field | Type | Key | Rules / Notes |
+|------|------|-----|---------------|
+| id | uuid | PK | The unique identifier for each classroom assignment. |
+| classroom_id | uuid | FK | The classrooms unique identifier, which class the task is assigned to. |
+| mission_slug | text | | The name the database uses to identify the mission. |
+
+### Table: classroom_memberships
+
+| Field | Type | Key | Rules / Notes |
+|------|------|-----|---------------|
+| id | uuid | PK | The unique identifier for each classroom membership. |
+| classroom_id | uuid | FK | The classrooms unique identifier. |
+| student_id | uuid | FK | The students that are in the classroom, their unique identifier. |
+
+### Table: classroom_student_progress
+
+| Field | Type | Key | Rules / Notes |
+|------|------|-----|---------------|
+| id | uuid | PK | The unique identifier for each classrooms student progress. |
+| classroom_id | uuid | FK | The classrooms unique identifier. |
+| student_id | uuid | FK | The students that are in the classroom, their unique identifier. |
+| mission_slug | text | | The name the database uses to identify the mission. |
+| status | text | | The students status on the assigned mission. |
+
+### Table: profiles
+
+| Field | Type | Key | Rules / Notes |
+|------|------|-----|---------------|
+| id | uuid | PK FK | The unique identifier for the users profile. |
+| username | text | | The users unique username. |
+| role | text | | Wether the user is a student or teacher. |
 
 ---
 
