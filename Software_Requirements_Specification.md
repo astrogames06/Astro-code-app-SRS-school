@@ -238,9 +238,7 @@ Astro Code is a web-based programming platform. It depends on Supabase for stori
 
 Insert your ERD image.
 
-```md
 ![ERD](images/erd.png)
-```
 
 ---
 
@@ -264,55 +262,118 @@ Insert your ERD image.
 
 ### Home Page
 
-```md
 ![Home](images/home.png)
-```
 
 Purpose:
-
-- 
+Allows the user to access the Astro Code application and navigate to its main features.
 
 Key Elements:
 
-- 
-- 
-- 
+- Navigation Bar
+    - Classroom Button
+    - Launch Button
+- Code Example
+- Create Game Button
+- Footer
 
 ---
 
-### Second Page
+### Launch Page
 
-```md
-![Second Page](images/page2.png)
-```
+![Launch Page](images/launch-section.png)
 
 Purpose:
 
-- 
+- To show all the users created games.
 
 Key Elements:
 
-- 
-- 
-- 
+- Navigation Bar
+- Game Preview Container
+- Create Game Button
+- Open Game Button
+- Delete Game Button
+- Share Game Button
+- Footer
 
 ---
 
-### Third Page
+### Integrated Development Environment Page
 
-```md
-![Third Page](images/page3.png)
-```
+![Integrated Development Environment Page](images/ide-section.png)
 
 Purpose:
 
-- 
+- For the user to be able to write code, upload assets and share their game.
 
 Key Elements:
 
-- 
-- 
-- 
+- Navigation Bar
+- Code Editor Text Area
+- Game Title
+- Share Game Button
+- Play Game Button
+- Assets Uploader
+    - Asset Upload Button
+    - Preview Of Uploaded Assets
+- Astro-AI chat
+    - Input Textbox
+    - Send Message Button
+    - Chat Preview Box
+- Footer
+
+---
+
+### Classroom Page for Teacher
+
+![Classroom Page for Teacher](images/classroom-teacher.png)
+
+Purpose:
+
+- For the teacher to be able to see classrooms, students and assign tasks.
+
+Key Elements:
+
+- Navigation Bar
+- Create Classroom Button
+- Classroom Name Input Box
+- List of Classrooms
+    - Code to Join the Classroom
+    - List of Students in the Classroom
+    - List of assigned mission for the Classroom
+- Footer
+
+### Classroom Page for Student Before Joining
+
+![Classroom Page for Student Before Joining](images/classroom-student-notjoin.png)
+
+Purpose:
+
+- To provide a place for the user to join a classroom via a code.
+
+Key Elements:
+
+- Navigation Bar
+- Classroom Code Input box
+- Classroom Join Button
+- Footer
+
+### Classroom Page for Student After Joining
+
+![Classroom Page for Student After Joining](images/classroom-student-join.png)
+
+Purpose:
+
+- To show the classroom they are in with its join code and their assigned tasks.
+
+Key Elements:
+
+- Navigation Bar
+- Classroom Name
+- Classroom Join Code
+- List of Assigned Tasks
+    - Open Button for Assigned Task
+- Footer
 
 ---
 
@@ -320,12 +381,17 @@ Key Elements:
 
 ## 6.1 Acceptance Criteria
 
-- [ ] FR-1 completed
-- [ ] FR-2 completed
-- [ ] FR-3 completed
-- [ ] FR-4 completed
-- [ ] FR-5 completed
-- [ ] FR-6 completed
+- FR-1: User account creation completed
+- FR-2: User account login completed
+- FR-3: Teacher classroom creation completed
+- FR-4: Student classroom joining via code completed
+- FR-5: Teacher assignments task completed
+- FR-6: Students can view assigned tasks completed
+- FR-7: User can create a new game completed
+- FR-8: User can upload assets for games completed
+- FR-9: User can share game completed
+- FR-10: Teacher can view status of students task completed
+
 
 ---
 
@@ -333,9 +399,11 @@ Key Elements:
 
 | Test Case | Expected Result | Actual Result | Pass |
 |-----------|-----------------|---------------|------|
-| | | | ✅ / ❌ |
-| | | | ✅ / ❌ |
-| | | | ✅ / ❌ |
+| FR-1: User account creation | New user account created | New user account was created | ✅ |
+| FR-2: User account login | User logs into account | User was able to log into their account | ✅ |
+| FR-3: Teacher classroom creation | New classroom gets created | New classroom was successfully created. | ✅ |
+| FR-4: Student classroom joining via code | Student will be able to join class | Student successfully joined the classroom | ✅ |
+| FR-5: Teacher assignments task | The task will get assigned to the students | The task was successfully assigned to the students | ✅ |
 
 ---
 
