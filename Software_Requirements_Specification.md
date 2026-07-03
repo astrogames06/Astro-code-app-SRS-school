@@ -244,17 +244,8 @@ Insert your ERD image.
 
 ## 5.3 Data Flow Diagram (DFD)
 
-### Context Diagram
+![Data Flow Diagram](images/DFD.png)
 
-```md
-![Context Diagram](images/context-diagram.png)
-```
-
-### Level 1 Diagram
-
-```md
-![Level 1 DFD](images/level1-dfd.png)
-```
 
 ---
 
@@ -404,6 +395,11 @@ Key Elements:
 | FR-3: Teacher classroom creation | New classroom gets created | New classroom was successfully created. | ✅ |
 | FR-4: Student classroom joining via code | Student will be able to join class | Student successfully joined the classroom | ✅ |
 | FR-5: Teacher assignments task | The task will get assigned to the students | The task was successfully assigned to the students | ✅ |
+| FR-6: Students can view assigned tasks | Students will be able to view their tasks | The tasks successfully appeared to the students. | ✅ |
+| FR-7: User can create a new game | User will be able to make a new game | The user successfully created a new game | ✅ |
+| FR-8: User can upload assets for games | User will be able to upload custom assets to their game | The user's assets where successfully uploaded | ✅ |
+| FR-9: User can share game | Users game will be shared via a link | The user's game was successfully shared and created a link | ✅ |
+| FR-10: Teacher can view status of students task | The teacher will be able to see the status of the students task | The teacher successfully was able to view the students task status | ✅ |
 
 ---
 
@@ -411,27 +407,18 @@ Key Elements:
 
 ### Known Limitations
 
-- 
-- 
-- 
+- 3D Games
+- Different programming languages
+- Live Code Edit Sharing
 
 ### Future Improvements
 
-- 
-- 
-- 
+- 3D Game functionality
+- Able to programme in: Javascript, C++, C# etc.
+- Live code sharing where teams able to edit the same code live.
 
 ---
 
-# Appendix (Optional)
-
-## Additional Screenshots
-
-```md
-![Screenshot](images/screenshot.png)
-```
-
 ## References
 
-- GitHub Repository:
-- Other References:
+- GitHub Repository: [https://github.com/astrogames06/astro-code-app](https://github.com/astrogames06/astro-code-app)
